@@ -9,7 +9,7 @@ void input_pappers_count(void);
 void input_xy_coordinates(void);
 void fill_area(void);
 void count_areas(void);
-void output_area(void);
+void output_areas(void);
 
 
 void input_pappers_count(void)
@@ -39,22 +39,12 @@ void output_areas(void)
 {printf("%d\n", real_total);}
 
 
-
-
-
-
-
-
-
 int main(void)
-{
-
-
-
-
-
-
-
-
-
+{input_pappers_count();
+for(int i=0;i< pappers_count;i++)
+{input_xy_coordinates();
+fill_area();
+count_areas();
+output_areas();}
+return 0;
 }
