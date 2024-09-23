@@ -3,6 +3,7 @@ int papper[100][100];
 int x_coordinate = 0;
 int y_coordinate = 0;
 int pappers_count = 0;
+int real_total = 0;
 
 void input_pappers_count(void);
 void input_xy_coordinates(void);
@@ -24,6 +25,7 @@ for (int x = x_coordinate; x <= max_x_coordinate; x++)
 {papper[x][y] = 1;}
 }
 }
+
 
 
 
