@@ -8,7 +8,7 @@ int real_total = 0;
 void input_pappers_count(void);
 void input_xy_coordinates(void);
 void fill_area(void);
-
+void count_areas(void);
 
 
 void input_pappers_count(void)
@@ -26,7 +26,13 @@ for (int x = x_coordinate; x <= max_x_coordinate; x++)
 }
 }
 
-
+void count_areas(void)
+{
+for (int x = 0; x < 100; x++){
+for(int y=0;y<100;y++)
+{if (papper[x][y] == 1) { real_total++; }}
+}
+}
 
 
 
