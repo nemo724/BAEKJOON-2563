@@ -49,7 +49,7 @@ void output_blank(void)
 {printf("%d\n",blank_total); }
 
 int main(void)
-{memset(papper, 0 , sizeof(papper));
+{memset(papper, 0 , sizeof(papper));//도화지 내 1*1 공간을 모두 0으로 초기화 
 input_pappers_count();
 for(int i=0;i< pappers_count;i++)
 {input_xy_coordinates();
